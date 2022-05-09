@@ -1,11 +1,11 @@
 ### Shows all products
-GET http://localhost:3000/products
+GET http://localhost:3000/products.json
 
 ### Shows a single product
-GET http://localhost:3000/products/2
+GET http://localhost:3000/products/2.json
 
 ### Creates a product
-POST http://localhost:3000/products
+POST http://localhost:3000/products.json
 Content-Type: application/json
 
 {
@@ -16,7 +16,7 @@ Content-Type: application/json
 }
 
 ### Updates a product
-PATCH http://localhost:3000/products/6
+PATCH http://localhost:3000/products/16.json
 Content-Type: application/json
 
 {
@@ -27,4 +27,4 @@ Content-Type: application/json
 }
 
 ### Deletes a product
-DELETE http://localhost:3000/products/4
+DELETE http://localhost:3000/products/18
