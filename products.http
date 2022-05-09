@@ -2,7 +2,7 @@
 GET http://localhost:3000/products
 
 ### Shows a single product
-GET http://localhost:3000/products/3
+GET http://localhost:3000/products/2
 
 ### Creates a product
 POST http://localhost:3000/products
@@ -20,7 +20,7 @@ PATCH http://localhost:3000/products/6
 Content-Type: application/json
 
 {
-  "name": "test update",
+  "name": "test_update",
   "price": 5,
   "image_url": "test_url",
   "description": "Test description"

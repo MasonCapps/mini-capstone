@@ -33,9 +33,11 @@ end
 #     response.parse
 
 #     print "Enter what you want the new name to be. If you don't want to change the name, enter 'No Change': "
-#     new_title_input = gets.chomp
-#     if new_title.upcase == "NO CHANGE" || new_title.upcase == "NOCHANGE"
-#       break
+#     new_name_input = gets.chomp
+#     if new_name_input.upcase != "NO CHANGE"
+#       new_name = new_name_input
+#       response = HTTP.get(http://localhost:3000/products/3)
+#     end
 #   elsif update_input.upcase == "NO"
 #     break
 #   else
