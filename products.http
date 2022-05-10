@@ -16,14 +16,11 @@ Content-Type: application/json
 }
 
 ### Updates a product
-PATCH http://localhost:3000/products/16.json
+PATCH http://localhost:3000/products/1.json
 Content-Type: application/json
 
 {
-  "name": "test_update",
-  "price": 5,
-  "image_url": "test_url",
-  "description": "Test description"
+  "price": 400
 }
 
 ### Deletes a product
