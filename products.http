@@ -10,7 +10,7 @@ Content-Type: application/json
 
 {
   "name": "test_name",
-  "price": 0,
+  "price": -10,
   "image_url": "test_url",
   "description": "This description"
 }
@@ -20,8 +20,8 @@ PATCH http://localhost:3000/products/1.json
 Content-Type: application/json
 
 {
-  "price": 400
+  "price": -10
 }
 
 ### Deletes a product
-DELETE http://localhost:3000/products/18
+DELETE http://localhost:3000/products/19
