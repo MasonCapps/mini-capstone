@@ -1,8 +1,8 @@
-### Shows all products
-GET http://localhost:3000/products.json
-
 ### Shows a single product
 GET http://localhost:3000/products/2.json
+
+### Shows all products
+GET http://localhost:3000/products.json
 
 ### Creates a product
 POST http://localhost:3000/products.json
