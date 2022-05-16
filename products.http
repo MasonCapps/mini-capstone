@@ -1,5 +1,5 @@
 ### Shows a single product
-GET http://localhost:3000/products/2.json
+GET http://localhost:3000/products/1.json
 
 ### Shows all products
 GET http://localhost:3000/products.json
@@ -10,9 +10,9 @@ Content-Type: application/json
 
 {
   "name": "test_name",
-  "price": -10,
-  "image_url": "test_url",
-  "description": "This description"
+  "price": 10,
+  "images": ["test_url", "another test", "third test"],
+  "description": "This description is a description."
 }
 
 ### Updates a product
@@ -20,8 +20,9 @@ PATCH http://localhost:3000/products/1.json
 Content-Type: application/json
 
 {
-  "price": -10
+  "image_url2": "Random Link",
+  "image_url3": "Another Random Link"
 }
 
 ### Deletes a product
-DELETE http://localhost:3000/products/19
+DELETE http://localhost:3000/products/20
