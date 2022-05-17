@@ -1,14 +1,16 @@
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NTI4OTEyOTh9.kPAIPK_52zlBew4JmYalo4k9qeG-ss4_Gak3QTevG3c
+
 ### Shows all orders for a user
 GET http://localhost:3000/orders.json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NTI4OTEyOTh9.kPAIPK_52zlBew4JmYalo4k9qeG-ss4_Gak3QTevG3c
+Authorization: Bearer {{jwt}}
 
 ### Shows one order for a user
 GET http://localhost:3000/orders/3.json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NTI4OTEyOTh9.kPAIPK_52zlBew4JmYalo4k9qeG-ss4_Gak3QTevG3c
+Authorization: Bearer {{jwt}}
 
 ### Creates an order for a user
 POST http://localhost:3000/orders.json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NTI4OTEyOTh9.kPAIPK_52zlBew4JmYalo4k9qeG-ss4_Gak3QTevG3c
+Authorization: Bearer {{jwt}}
 Content-Type: application/json
 
 {

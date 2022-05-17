@@ -1,6 +1,7 @@
 ### Shows a single product
 GET http://localhost:3000/products/1.json
 
+
 ### Shows all products
 GET http://localhost:3000/products.json
 
