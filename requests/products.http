@@ -3,7 +3,7 @@ GET http://localhost:3000/products/1.json
 
 
 ### Shows all products
-GET http://localhost:3000/products.json
+GET http://localhost:3000/products.json?category=Sports
 
 ### Creates a product
 POST http://localhost:3000/products.json
@@ -17,12 +17,11 @@ Content-Type: application/json
 }
 
 ### Updates a product
-PATCH http://localhost:3000/products/1.json
+PATCH http://localhost:3000/products/21.json
 Content-Type: application/json
 
 {
-  "image_url2": "Random Link",
-  "image_url3": "Another Random Link"
+  "name": "Indoor Basketball"
 }
 
 ### Deletes a product

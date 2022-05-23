@@ -1,4 +1,4 @@
-@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NTI4OTEyOTh9.kPAIPK_52zlBew4JmYalo4k9qeG-ss4_Gak3QTevG3c
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NTMxNTUwMTN9.IpC73TL6rFlo5w2nRDsuIDJjog-aJQLf6qRnkztIP-s
 
 ### Shows all orders for a user
 GET http://localhost:3000/orders.json
@@ -11,9 +11,3 @@ Authorization: Bearer {{jwt}}
 ### Creates an order for a user
 POST http://localhost:3000/orders.json
 Authorization: Bearer {{jwt}}
-Content-Type: application/json
-
-{
-  "product_id": 1,
-  "quantity": 2
-}

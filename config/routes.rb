@@ -18,6 +18,11 @@ Rails.application.routes.draw do
   get "/orders/:id" => "orders#show"
   post "/orders" => "orders#create"
 
+  # Shopping cart routes
+  get "/carted_products" => "carted_products#index"
+  post "/carted_products" => "carted_products#create"
+  delete "/carted_products/:id" => "carted_products#destroy"
+
   # Authentication routes
   post "/users" => "users#create"
   post "/sessions" => "sessions#create"

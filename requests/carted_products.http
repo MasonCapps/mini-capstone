@@ -1,0 +1,18 @@
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NTMxNTUwMTN9.IpC73TL6rFlo5w2nRDsuIDJjog-aJQLf6qRnkztIP-s
+
+### Shows all carted products
+GET http://localhost:3000/carted_products.json
+
+### Creates a carted product
+POST http://localhost:3000/carted_products
+Authorization: Bearer {{jwt}}
+Content-Type: application/json
+
+{
+  "product_id": 2,
+  "quantity": 1
+}
+
+### Soft deletes a carted product
+DELETE http://localhost:3000/carted_products/2
+Authorization: Bearer {{jwt}}
